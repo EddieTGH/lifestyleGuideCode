@@ -1,0 +1,335 @@
+/*nav bar properties position, color, font-size, size*/
+nav {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 100;
+    background-color: #7ba9ca;
+    text-align: right;
+    padding-right: 1vw; 
+    font-size: 0.93vw;
+    height: 3.6vw;
+}
+
+/*When nav bar elements are hovered, color changes */
+nav a:hover{ 
+	color: #000000; 
+} 
+
+/*sidebar bar properties position, color, font-size, size*/
+.sidebar {
+  padding-top: 3.6vw;
+  width: 230px;
+  background-color: rgba(184, 219, 248, 0.671);
+  position: fixed;
+  height: 100%;
+  overflow:auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+}
+
+/* Active/current link */
+.sidebar .current-menu-item a{
+  background-color: #c097bb;
+  color: white;
+}
+
+
+/* Links on mouse-over */
+.sidebar a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/*header properties*/
+header {
+    background-color: #39a2ec;
+    text-align: center;
+    min-width: 500px;
+  }
+
+/*article descriptions grid properties*/
+.container2 {
+  display: inline-grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 700px;
+  grid-gap: 30px;
+  margin-top: 40px;
+  padding-left: 90px;
+  grid-auto-rows: 500px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  /*grid-auto-row: 500px; */
+  grid-auto-flow: row;
+  
+}
+
+/*video description grid properties*/
+.container3 {
+  display:inline-grid;
+  grid-gap: 30px;
+  margin-top: 40px;
+  padding-left: 8vw;
+  grid-auto-rows: 500px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  grid-auto-flow: row;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 270px 270px 270px 270px;
+  margin-top: 10px;
+  margin-left: 190px;
+}
+
+/*h2 properties*/
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #39a2ec;
+  padding: 10px 0px 10px 10px;
+}
+
+/*h2 hover properties*/
+h2 a:hover{ 
+    color: #e250d1;
+  } 
+
+/*subheading properties*/
+#descriptions
+{
+  padding-left: 230px;
+  text-align: center;
+}
+
+/*subheading properties*/
+#articless, #viddescriptions, #descriptions {
+    padding-left: 230px;
+    text-align: center;
+    color: #39a2ec;
+}
+
+/*article descrip images settings*/
+.images1 {
+  width: 100%;
+  height: 190px;
+}
+
+/*article descrip images settings*/
+.images {
+  width: 100%;
+  height: 200px;
+}
+
+/*article description box model properties*/
+.article1, .article2, .article3{
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #39a2ec;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*Intro Grid*/ 
+.Intro {
+  display:inline-grid;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 90px 110px 50px 220px 40px 210px;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+/*Video Grid Element Properties*/ 
+.video1 {
+    grid-area: 1 / 1 / span 1/ span 1;
+}
+/*Video Grid Element Properties*/ 
+.video2 {
+    grid-area: 1 / 2 / span 1/ span 1;
+}
+/*Video Grid Element Properties*/ 
+.video3 {
+    grid-area: 3 / 1 / span 1/ span 1;
+}
+/*Video Grid Element Properties*/ 
+.video4 {
+    grid-area: 3 / 2 / span 1/ span 1;
+}
+/*Video Grid Element Properties*/ 
+.d1 , .d2, .d3, .d4 {
+    margin-left: 15px;
+}
+
+/*Intro Grid Element Properties*/ 
+#Ititle {
+  grid-area: 1 / 1 / span 1 / span 2;
+  text-align: center;
+  color: #39a2ec;
+  font-size:2.6vw;
+}
+
+/*Intro Grid Element Properties*/ 
+#Idescrip {
+  grid-area: 2 / 1 / span 1 / span 2;
+  font-size: 1vw;
+  text-align: center;
+}
+
+/*Intro Grid Element Properties*/ 
+#idef {
+  grid-area: 3 / 1 / span 1 / span 1;
+  font-size: 1vw;
+  color: #e250d1;
+  font-size: 2.1vw;
+}
+
+/*Intro Grid Element Properties*/ 
+#definition { 
+  grid-area: 4 / 1 / span 1/ span 1;
+  font-size: 1vw;
+  text-align: justify;
+  margin-right: 30px;
+}
+
+/*Intro Grid Element Properties*/ 
+#vidIntro {
+  grid-area: 5 / 1 / span 1 / span 1;
+  justify-items: center;
+  align-content: center;
+  color: #e250d1;
+  font-size: 2.1vw; 
+}
+
+/*Intro Grid Element Properties*/ 
+#vidIntro2 {
+  grid-area: 6 / 1 / span 1 / span 1;
+  justify-items: center;
+  align-content: center;
+  font-size: 1vw;
+  text-align: justify;
+  margin-right: 30px;
+}
+
+/*Intro Grid Element Properties*/ 
+#vid {
+  grid-area: 5 / 2 / span 2 / span 1;
+  margin-top: 50px;
+}
+
+/*clock image properties*/
+.time {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 20px;
+  height: auto;
+}
+
+/*approx time to read - text properties*/
+.mins {
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 0px;
+}
+
+/*author properties*/
+.author {
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 0px;  
+  margin-left: 10px;
+}
+
+/*description properties*/
+.description {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 10px 10px 10px;
+  border-top: 1px solid #4a4a4a;
+}
+
+/*uneeded
+.container {
+  min-width: 500px;
+  margin: auto;
+} */
+
+/*footer properties*/
+footer {
+  margin-top: 44px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+/*article properties*/
+.information {
+  margin-left: 515px;
+  margin-right:250px;
+  text-align: justify;
+}
+
+/*resource properties*/
+.resources {
+  margin-left: 270px;
+}
+
+/*footer properties*/
+footer {
+  margin-left: 235px;
+}
+
+/*color settings for article titles and video titles */
+.container3 h5, .information h4 {
+    color: #e250d1;
+}
+
+/*footer title and useful resources title properties*/
+#footertitle, #urtitle {
+  color: #39a2ec;
+}
+
+/*form properties*/
+.formend {
+  margin-left: 17vw;
+}
+
+/*submission button properties*/
+.submission {
+  margin-left:0.5vw;
+}
+
+/*form properties*/
+#feedbackform {
+  color: #39a2ec;
+  margin-left: 0.5vw;
+}
+
+/*submission button properties*/
+#btnsubmit {
+  margin-left: 0.5vw;
+}

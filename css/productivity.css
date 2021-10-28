@@ -1,0 +1,303 @@
+/*nav bar properties position, color, font-size, size*/
+nav {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 100;
+    background-color: #7ba9ca;
+    text-align: right;
+    padding-right: 1vw; 
+    font-size: 0.93vw;
+    height: 3.6vw;
+}
+
+/*When nav bar elements are hovered, color changes */
+nav a:hover{ 
+	color: #000000; 
+} 
+
+/*sidebar bar properties position, color, font-size, size*/
+.sidebar {
+  padding-top: 3.59vw;
+  width: 230px;
+  background-color: rgba(184, 219, 248, 0.671);
+  position: fixed;
+  height: 100%;
+  overflow:auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+}
+
+/* Active/current link */
+.sidebar .current-menu-item a{
+  background-color: #c097bb;
+  color: white;
+}
+
+
+/* Links on mouse-over */
+.sidebar a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/*header properties*/
+header {
+    background-color: #39a2ec;
+    text-align: center;
+    min-width: 500px;
+  }
+
+/*article description grid properties position, color, font-size, size*/
+.adescrip {
+  display: inline-grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 630px 630px;
+  grid-gap: 30px;
+  margin-top: 40px;
+  padding-left: 90px;
+  grid-auto-rows: 500px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  /*grid-auto-row: 500px; */
+  grid-auto-flow: row;
+  
+}
+
+/*h2 properties*/
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #e250d1;
+  padding: 10px 0px 10px 10px;
+}
+
+/*h4 properties*/
+h4  {
+  color: #e250d1;
+}
+
+/*h2 elements hover properties*/
+h2 a:hover{ 
+  color: #e250d1;
+  } 
+
+
+/*Subheadings of the page properties*/
+#descriptions
+{
+  padding-left: 230px;
+  text-align: center;
+  color: #39a2ec;
+}
+
+/*Subheadings of the page properties*/
+#articless {
+    padding-left: 230px;
+    text-align: center;
+    color: #39a2ec;
+}
+
+
+/*article descrip images settings*/
+.images1 {
+  width: 100%;
+  height: 210px;
+}
+
+
+/*article descrip images settings*/
+.images {
+  width: 100%;
+  height: 200px;
+}
+
+/*box shadow for article description*/
+.recipe {
+  width: 300px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*intro grid properties*/
+.Intro {
+  display:inline-grid;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 110px 70px 60px 200px 60px 220px;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+/*intro grid element properties*/
+#Ititle {
+  grid-area: 1 / 1 / span 1 / span 2;
+  text-align: center;
+  color: #39a2ec;
+  font-size:2.6vw;
+}
+
+/*intro grid element properties*/
+#Idescrip {
+  grid-area: 2 / 1 / span 1 / span 2;
+  font-size: 1vw;
+  text-align: center;
+  margin-top: 0vw;
+}
+
+/*intro grid element properties*/
+#idef {
+  grid-area: 3 / 1 / span 1 / span 1;
+  
+  color: #e250d1;
+  font-size: 2.1vw;
+}
+
+/*intro grid element properties*/
+#definition { 
+  grid-area: 4 / 1 / span 1/ span 1;
+  font-size: 1vw;
+  text-align: justify;
+  margin-right: 30px;
+}
+
+/*intro grid element properties*/
+#vidIntro {
+  grid-area: 5 / 1 / span 1 / span 1;
+  justify-items: center;
+  align-content: center;
+  color: #e250d1;
+  font-size: 2.1vw;
+}
+
+/*intro grid element properties*/
+#vidIntro2 {
+  grid-area: 6 / 1 / span 1 / span 1;
+  justify-items: center;
+  align-content: center;
+  font-size: 1vw;
+  text-align: justify;
+  margin-right: 30px;
+}
+
+/*intro grid element properties*/
+#vid {
+  grid-area: 5 / 2 / span 2 / span 1;
+  margin-top: 45px;
+}
+
+
+/*clock image properties*/
+.time {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 20px;
+  height: auto;
+}
+
+/*approx time to read - text properties*/
+.mins {
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 0px;
+}
+
+/*author properties*/
+.author {
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 0px;  
+  margin-left: 10px;
+}
+
+/*description properties*/
+.description {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 10px 10px 10px;
+  border-top: 1px solid #4a4a4a;
+}
+
+
+
+/*footer properties*/
+footer {
+  margin-top: 44px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+/*article properties*/
+.information {
+  margin-left: 515px;
+  margin-right:250px;
+  text-align: justify;
+}
+
+/*resource properties*/
+.resources {
+  margin-left: 270px;
+}
+
+/*footer properties*/
+footer {
+  margin-left: 15.5vw;
+}
+
+/*footer title and useful resources title properties*/
+#footertitle, #urtitle {
+  color: #39a2ec;
+}
+
+/*article description box model properties*/
+.article1, .article2, .article3, .article4, .article5, .article6{
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #39a2ec;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*form properties*/
+.formend {
+  margin-left: 17vw;
+}
+
+/*submission button properties*/
+.submission {
+  margin-left:0.5vw;
+}
+/*form properties*/
+#feedbackform {
+  color: #39a2ec;
+  margin-left: 0.5vw;
+}
+
+/*submission button properties*/
+#btnsubmit {
+  margin-left: 0.5vw;
+}

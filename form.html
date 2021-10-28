@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--This template provides the boilerplate required to start a project with MaterializeCSS
+        -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css via CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--If you import more than 1 cSS file, be aware that the styles are applied in the order they are linked-->
+    <!--Let browser know website is optimized for mobile-->
+
+
+    <!--HTML requirements-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/form.css"> <!--Link CSS file-->
+    <!-- <script src="javascript/form.js"></script>  <!--Link JS file-->
+    <!--Title-->
+    <title>Forms</title>
+    <!--Links for cutom fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+</head>
+<nav> <!--navigation bar and links-->
+    <a href="index.html">Home</a> |
+    <a href="Mental.html">Mental/Emotional Health</a> |
+    <a href="Social.html">Social Life</a> |
+    <a href="Productivity.html">Productivity</a> |
+    <a href="form.html">Forms</a>
+</nav>  
+
+<body>
+    <div class="intro"> <!--Form page heading and main phrase-->
+        <h3 id = "title"><strong>Forms</strong></h3>
+        <h4 id = "lifethrows" >Here are a couple of our forms that you can fill out to register yourself in our database and give us feedback. Thank you!</h4>
+
+     
+    </div>
+    
+    <br>
+
+    
+    <div class="form"> <!--Form to register user into database -->
+        <form name = "contact-form" method="GET">
+            <!-- Form Heading -->
+            <h3>Register Into Our Database!</h3> 
+            <!-- Email Address input field -->
+            <div class="input-field col s6">
+                <input id="emailAddress" type="email" class="validate">
+                <label for="emailAddress">Email Address</label>
+            </div>
+            <!--First Name input field-->
+            <div class="input-field col s6">
+                <input id="firstName" type="text" class="validate">
+                <label for="firstName">First Name</label>
+            </div>
+            <!-- Last Name input field -->
+            <div class="input-field col s6">
+                <input id="lastName" type="text" class="validate">
+                <label for="lastName">Last Name</label>
+            </div>
+            
+        
+
+            <!--Submit button that resets the form-->
+            
+            <a id = "update" class="waves-effect waves-light btn-small"><i class="material-icons left">update</i>UPDATE</a>
+            <a id = "delete" class="waves-effect waves-light btn-small"><i class="material-icons left">delete</i>DELETE</a>
+            <a id = "insert" class="waves-effect waves-light btn-small"><i class="material-icons left">add_circle</i>INSERT</a> 
+            <a id = "select" class="waves-effect waves-light btn-small"><i class="material-icons left">select_all</i>SELECT</a>
+            <!-- These buttons don't work. THEY only work after one of the above buttons is pressed. for instance, when u select someone (one of the above buttons, u can update, delete, wtver. u can even insert afterwards. weird)
+            <button type = "submit" value="Submit" id="update" onclick="submitForm(); toast2();" class="waves-effect waves-purple btn-small">Update
+                <i class="material-icons right">send</i>
+            </button>
+            <button type = "submit" value="Submit" id="delete" onclick="submitForm(); toast2();" class="waves-effect waves-purple btn-small">Delete
+                <i class="material-icons right">send</i>
+            </button>  
+             <button type = "submit" value="Submit" id="insert" onclick="submitForm(); toast2();" class="waves-effect waves-purple btn-small">Submit
+                <i class="material-icons right">send</i>
+            </button> -->
+
+        </form>
+    </div>
+
+
+            <!-- Table for displaying selected data - FOR USER REGISTRATION FORM-->
+            <table class="centered">
+                <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>EmailAddress</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td><p id="firstVal"></p></td>
+                    <td><p id="lastVal"></p></td>
+                    <td><p id="emailVal"></p></td>
+                </tr>
+                </tbody>
+            </table>
+        
+            <div class="form"> <!--Form to give feeback -->
+                <form name = "seconFormd" method="GET">
+                    <!-- Form Heading -->
+                    <h3>Give us feedback!</h3>
+                    <!-- Email Adress input -->
+                    <div class="input-field col s6">
+                        <input id="emailAddress2" type="email" class="validate">
+                        <label for="emailAddress2">Email Address</label>
+                    </div>
+                    <!-- Feeback text input-->
+                    <div class="input-field col s6">
+                        <input id="feedback" type="text" class="validate">
+                        <label for="feedback">Feedback</label>
+                    </div>
+        
+              <!-- Rating satisfaction dropdown picker -->
+                  <div class="input-field col s12">
+                    <select id = "ratingSel">
+                      <option value="" disabled selected>Choose Your Option</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <label>Choose Your Satisfaction Rating</label>
+                  </div>
+                  <!--Feedback review page picker -->
+                  <div class="input-field col s12">
+                    <select id = "page">
+                      <option value="" disabled selected>Choose Your Option</option>
+                      <option value="Mental/Emotional Health">Mental/Emotional Health</option>
+                      <option value="Social Life">Social Life</option>
+                      <option value="Productivity">Productivity</option>
+
+                    </select>
+                    <label>Choose Which Page You Reviewed</label>
+                  </div>
+            
+                <!--Submit button that resets the form-->
+                    
+                <a id = "update2" class="waves-effect waves-light btn-small"><i class="material-icons left">update</i>UPDATE</a>
+                <a id = "delete2" class="waves-effect waves-light btn-small"><i class="material-icons left">delete</i>DELETE</a>
+                <a id = "insert2" class="waves-effect waves-light btn-small"><i class="material-icons left">add_circle</i>INSERT</a> 
+                <a id = "select2" class="waves-effect waves-light btn-small"><i class="material-icons left">select_all</i>SELECT</a>
+        
+            </form>
+        </div> <!-- Table for dislpaying data for the select function -->
+              <table class="centered">
+                <thead>
+                  <tr>
+                      <th>Email</th>
+                      <th>Feedback</th>
+                      <th>Rating</th>
+                      <th>Page Reviewed</th>
+                  </tr>
+                </thead>
+              
+                <tbody>
+                  <tr>
+                    <td><p id="emailVal2"></p></td>
+                    <td><p id="feedbackVal"></p></td>
+                    <td><p id="ratingVal"></p></td>
+                    <td><p id="pageVal"></p></td>
+                  </tr>
+                </tbody>
+              </table>
+        
+
+
+
+        <footer>
+            <h5><strong>Contact Us</strong></h5> <!--Footer with contact info-->
+            <p>Email Address: shsubramanian@ctemc.org & edniu@ctemc.org</p>
+            <div class="social-media"> <!--Links to other contacts-->
+                <a href="https://www.instagram.com/" target="_blank" > <img alt="Instagram"
+                        src="https://img.pngio.com/download-logo-instagram-free-png-transparent-image-and-clipart-instagram-logo-with-transparent-background-400_400.png" width="57" height="57" id = "insta">
+                <a href="https://www.facebook.com/" target="_blank" > <img alt="Facebook"
+                        src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" width="55" height="55" id = "fb">
+                <a href="https://www.twitter.com/" target="_blank" > <img alt="Twitter"
+                        src="https://toppng.com/uploads/preview/transparent-background-twitter-logo-115496806068c9eheqhlg.png" width="55" height="55" id = "twitter" >
+
+            </div>
+        </footer>
+     <br>
+
+    </div>
+
+
+
+
+
+   <!--JavaScript & JQuery at end of body for optimized loading-->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="javascript/materialize.js"></script>
+
+   <!--Firebase Libraries - Make sure the version matches your Firebase SDK snippet-->
+   <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+   
+   <!-- Also need to include fireScripts.js custom JS file -->
+   <!-- <script src="javascript/userScripts.js"></script> -->
+   <script src="javascript/combinedScripts.js"></script>
+<!-- Matirialize function for the dropdown-->
+    <script> 
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+    </script>
+    </body>
+
+    </html>
+

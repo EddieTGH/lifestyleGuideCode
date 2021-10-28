@@ -1,0 +1,270 @@
+nav { /* Navigation bar css */
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  z-index: 100;
+  background-color: #7ba9ca;
+  text-align: right;
+  padding-right: 1vw; 
+  font-size: 0.93vw;
+  height: 3.6vw;
+}
+
+nav a:hover{  /* When hovering over navbar items, color changes */
+color: #000000; 
+} 
+
+.sidebar { /* sidebar for links css */
+padding-top: 3.6vw;
+width: 230px;
+background-color: rgba(184, 219, 248, 0.671);
+position: fixed;
+height: 100%;
+}
+
+/* Sidebar links */
+.sidebar a {
+display: block;
+color: black;
+padding: 16px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+background-color: #c097bb;
+color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+
+
+main { /* CSS first grid for introduction */
+  display: inline-grid;
+  grid-template-columns: 21.25vw 21.25vw 21.25vw 16.25vw;
+  grid-template-rows: 5vw 5vw 17.7vw 5.21vw 6vw;
+  margin-top: 2.3vw;
+  margin-left: 13.7vw;
+}
+
+
+#mainHeader{ /* Big header css */
+  font-size: 2.6vw;
+  text-align: center;
+  grid-area: 1 / 1 / span 1 / span 4;
+  color: #39a2ec;
+  padding-left: 4.7vw;
+  margin-top: 1vw;
+  
+}
+#h111{ /* first heading css */
+  font-size: 2.1vw;
+  text-align: justify; 
+  padding-left: 13.2vw; 
+  align-content: center;
+  grid-area: 2 / 1 / span 1 / span 2;
+  color: #e250d1;
+}
+
+#h222{ /* second heading css */
+  font-size: 2.1vw;
+  text-align: justify; 
+  padding-left: 14.3vw; 
+  align-content: center;
+  grid-area: 4 / 1 / span 1 / span 2;
+  color: #e250d1;
+}
+#img111{ /* introfuction image in grid css */
+  grid-area: 2 / 3 / span 3 / span 2;
+  padding-left: 5vw;
+  padding-top: 2.5vw;
+
+}
+
+#p111 { /* first paragraph */
+  font-size: 1vw;
+  line-height: normal;
+  text-align: justify; 
+  padding-left: 6vw; 
+  justify-content: center;
+  align-content: center;
+  grid-area: 3 / 1 / span 1 / span 2;
+}
+
+#p222 { /* second paragraph */
+  font-size: 1vw;
+  line-height: normal;
+  text-align: justify; 
+  padding-left: 6vw; 
+  justify-content: center;
+  align-content: center;
+  grid-area: 5 / 1 / span 1 / span 4;
+}
+
+#banner { /* Box model background image */
+  background-image: url("https://yourlifeiowa.org/sites/default/files/images/GettyImages-625736338.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: fill;
+  margin-left: 15vw;
+}
+
+.content { /* Box model contents */
+  width: 60vw;
+  height: 30vw;
+  border: .5vw solid rgb(255, 255, 255);
+  margin-left: 12vw;
+  position: absolute;
+  margin-top:8vw;
+}
+#boxLine{ /* box model outline */
+color: #ffffff;
+margin-left: 20vw;
+margin-right: 20vw;
+text-align: center;
+padding-top: 18vw;
+}
+
+.halfTwo{ /* Second grid for lists and paragraos */
+  display: inline-grid;
+  grid-template-columns: 21.25vw 21.25vw 21.25vw 21.25vw;
+  grid-template-rows: 5vw 5vw 11vw 5.21vw 5vw;
+  margin-left: 13.7vw;
+}
+
+#h333{ /* first heading in second grid */
+  font-size: 2.1vw;
+  text-align: justify; 
+  padding-left: 11vw ; 
+  align-content: center;
+  grid-area: 1 / 1 / span 1 / span 2;
+  color: #e250d1;
+}
+
+#p333 { /* first paragraph about help */
+  font-size: 1vw;
+  line-height: normal;
+  text-align: justify; 
+  padding-left: 6vw; 
+  justify-content: center;
+  align-content: center;
+  grid-area: 2 / 1 / span 1 / span 2;
+}
+
+#h444{ /* second heading below first in grid */
+  font-size: 2.1vw;
+  text-align: justify; 
+  padding-left: 11vw ; 
+  align-content: center;
+  grid-area: 4 / 1 / span 1 / span 2;
+  margin-top: 3vw;
+  color: #e250d1;
+}
+
+#p444 { /* second paragraph in second grid */
+  font-size: 1vw;
+  line-height: normal;
+  text-align: justify; 
+  padding-left: 6vw; 
+  justify-content: center;
+  align-content: center;
+  grid-area: 5 / 1 / span 1 / span 2;
+}
+
+#h555{ /* first list heading */
+  font-size: 2.1vw;
+  text-align: justify; 
+  padding-left: 9vw ; 
+  align-content: center;
+  grid-area: 1 / 3 / span 1 / span 2;
+  color: #39a2ec;
+}
+
+#earlyList{ /* first list */
+  font-size: 1.4vw;
+  line-height: normal;
+  text-align: justify; 
+  margin-left: 60vw; 
+  margin-top:-25.4vw; /* right here change it as u like (was -28.4 before)*/
+}
+
+#h666{ /* second list heading */
+  font-size: 2.1vw;
+  text-align: justify; 
+  padding-left: 14vw ; 
+  align-content: center;
+  grid-area: 4 / 3 / span 1 / span 2;
+  color: #39a2ec;
+  margin-top:3vw;
+}
+ 
+#sndList{ /* secondl ist */
+  font-size: 1.4vw;
+  line-height: normal;
+  text-align: justify; 
+  margin-left: 60vw; 
+  margin-top:4.2vw;
+}
+
+footer { /*  */
+  margin-top: 44px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.resources { /*  */
+  margin-left: 270px;
+  
+  
+}
+
+footer { /* Footer css for images and links */
+  margin-left: 15.5vw;
+}
+
+#h777{ /* Heading for final list of paragraphs */
+  font-size: 2.1vw;
+  padding-left: 19.8vw ; 
+  color:#e250d1;
+}
+
+#headings{ /* last second heading css */
+  color: #39a2ec;
+  margin-left: 19.8vw;
+}
+
+#paras{ /* last section of maragraphs */
+  margin-left: 19.8vw;
+  margin-right:4.3vw;
+  text-align: justify;
+}
+
+#mentalimgs{ /* CSS for three images */
+  margin-left:27.5vw;
+  margin-top:4vw;
+}
+
+.formend { /* Form css at end of page */
+  margin-left: 17vw;
+}
+
+#feedbackform { /* CSS for rest of the form */
+  color: #39a2ec;
+  margin-left: 0.5vw;
+}
+
+.submission {
+  margin-left:0.5vw;
+}
+
+#footertitle, #urtitle { /* specific footer CSS  */
+  color: #39a2ec;
+}
+
+/*submission button properties*/
+#btnsubmit {
+  margin-left: 0.5vw;
+}
